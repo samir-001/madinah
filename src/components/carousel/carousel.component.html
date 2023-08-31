@@ -1,0 +1,54 @@
+<div class="content-data">
+    <div class="content-data__control">
+        <img class="chevron-right" src="../../assets/images/chevron-left.svg" (click)="scroll('prev')"/>
+        <img src="../../assets/images/chevron-left.svg" (click)="scroll('next')" />
+    </div>
+    <div  #carousel id="carousel" class="carousel">
+    <div class="service-card">
+        <div class="service-card__icon">
+            <div class="service-card__icon__cercle"></div>
+            <img class="service-card__icon__content" src="../../assets/images/page.png" alt="">
+            
+        </div>
+        <div>
+            <div class="header-text">
+                <h3 class="header-text__main">متطلبات الخدمة</h3>
+                <p class="header-text__sub">
+                    تسجيل المواطن في خدمة عملاء الأمانة
+                  </p>
+                  <p class="header-text__sub"> 
+                      الدخول للخدمة عبر بوابة النفاذ الموحد
+                  </p>
+            </div>
+        </div>
+    </div>
+    <div class="service-card" [ngStyle]="{backgroundColor:'#FEF7E3'}">
+        <div class="service-card__icon">
+            <div class="service-card__icon__cercle" [ngStyle]="{backgroundColor:'#ffce00'}"></div>
+            <img class="service-card__icon__content" src="../../assets/images/page.png" alt="">
+            
+        </div>
+        <div>
+            <div class="header-text">
+                <h3 class="header-text__main">مرفقات الخدمة</h3>
+                <p class="header-text__sub">
+                    صورة الهوية
+                  </p>
+                  <p class="header-text__sub"> 
+                    خطاب المعروض
+                  </p>
+            </div>
+        </div>
+    </div>
+    <div class="service-card" [ngStyle]="{backgroundColor:'#DCF3E9'}">
+        <div class="service-card__icon">
+            <div class="service-card__icon__cercle" [ngStyle]="{backgroundColor:'#30db8c'}"></div>
+            <img class="service-card__icon__content" src="../../assets/images/page.png" alt="">
+            
+        </div>
+        <div>
+         
+        </div>
+    </div>
+</div>
+</div>

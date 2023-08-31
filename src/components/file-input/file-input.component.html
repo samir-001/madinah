@@ -1,0 +1,54 @@
+<div class="file-input" >
+    <label for="file">
+        <img src="../../assets/images/upload.svg" alt="">
+        <span>قم بإسقاط الملفات هنا أو انقر للتحميل</span>
+    </label>
+</div> 
+<div class="file-input__control">
+    <div class="file-input__control__addfile">
+        
+        <button class="btn btn__dark">
+            <input #file name="file" id="file" type="file" (change)="getFileNameOnchange(file)"/>
+            <span>إضافة</span>
+            <span class="btn__icon">
+                <img src="../../assets/images/attach_file.svg" alt="">
+            </span>
+        </button>
+    </div>
+    <button class="btn">
+        <span>إلغاء</span>
+        <span class="btn__icon">
+            <img src="../../assets/images/delete.svg" alt="">
+        </span>
+    </button>
+</div>
+<div class="file-view" >
+    <div class="file-view__image">
+        <span [hidden]="fileName">
+            <img src="../../assets/images/172620_upload_icon.svg" alt="">
+        </span>
+        <span  [hidden]="!fileName">{{extension+'.'}}</span>
+        
+    </div>
+    <div class="file-view__text">
+        <span [hidden]="fileName">
+            لم يتم رقع اي ملف
+        </span>
+        <span  [hidden]="!fileName">{{fileName}}</span>
+    </div>
+    <div class="file-view__icon">
+        <img [hidden]="!fileName" height="15px" width="15px" src="../../assets/images/delete.svg" alt="">
+    </div>
+    
+</div>   
+<ul class="guid">
+<li>برجاء ارفاق الخطاب  ارفاق اخري بحد  </li>
+<li>ارفاق الهوية</li>
+<li>ارفاق اخري بحد اقصى ثلاث ملفات</li>
+<li> 
+     <span>
+        حجم مسموج به للملفات المرفقه
+     </span>
+     <span>2MB</span>
+    </li>
+</ul>

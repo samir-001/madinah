@@ -1,0 +1,75 @@
+<app-header [data]="data">
+        <app-search></app-search>
+</app-header>
+<div class="postion-100">
+    <div class="container">
+        <app-request>
+            <div class="requestNumber">
+                <div class="header-text">
+                    <div class="header-text__main"> رقم الطلب</div>
+                    <div class="header-text__sub">#991999</div>
+                </div>
+                <button class="btn mt-20" [ngStyle]="{backgroundColor:'#44AD85'}">
+                    <span>طلب</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/Edit-white.svg" alt="">
+                    </span>
+                </button>
+            </div>
+            <div class="requestControl"> 
+                <button class="btn mt-20" [ngStyle]="{border:'1px solid #44AD85',color:'#44AD85'}">
+                    <span>طلب  مؤكد</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/edit.svg" alt="">
+                    </span>
+                </button>
+                <button class="btn mt-20" [ngStyle]="{border:'1px solid #F2656D',color:'#F2656D'}">
+                    <span>حذف الطلب</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/red_delete.svg" alt="">
+                    </span>
+                </button>
+            </div>
+        </app-request>
+        <app-request>
+            <div class="requestNumber">
+                <div class="header-text">
+                    <div class="header-text__main"> رقم الطلب</div>
+                    <div class="header-text__sub">#991999</div>
+                </div>
+                <button class="btn mt-20" [ngStyle]="{backgroundColor:'#32C5FD'}">
+                    <span>طلب  مؤكد</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/check-decagram.svg" alt="">
+                    </span>
+                </button>
+            </div>
+            <div class="requestControl"> 
+                <img src="../../assets/images/barcode-scan.svg"/>
+                <p class="text">الرجاء إبراز الباركود الخاص بالموعد عند دخول المبني</p>
+            </div>
+        </app-request>
+        <app-request>
+            <div class="requestNumber">
+                <div class="header-text">
+                    <div class="header-text__main"> رقم الطلب</div>
+                    <div class="header-text__sub">#991999</div>
+                </div>
+                <button class="btn mt-20" [ngStyle]="{backgroundColor:'#F2656D'}">
+                    <span>طلب</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/delete.svg" alt="">
+                    </span>
+                </button>
+            </div>
+            <div class="requestControl"> 
+                <img src="../../assets/images/remove.svg"/>
+                <p class="text">تم الغاء الطلب من قبل المستخدم بتاريخ ٢٠-١٠-٢٠٢٢</p>
+            </div>
+        </app-request>
+    </div>
+</div>
+<div class="fix-potion-100">
+    <app-footer></app-footer>
+</div>
+    

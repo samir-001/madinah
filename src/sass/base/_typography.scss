@@ -1,0 +1,25 @@
+@font-face {
+    font-family: neo-medium-arabic;
+    src: url(../../assets/fonts/NeoSansArabicBold.ttf);
+}
+@font-face {
+    font-family: neo-regular-arabic;
+    src: url(../../assets/fonts/NeoSansArabicLight.ttf);
+}
+.header-text{
+    margin-right: 18px;
+    &__main{
+        font-family: neo-medium-arabic;
+        font-size:18px ;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+    &__sub{
+        font-family: neo-regular-arabic;
+        font-size: 17px;
+        color: #626973;
+        line-height: 1.6;
+        font-weight: 700;
+    }
+}

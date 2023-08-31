@@ -1,0 +1,55 @@
+.input-group{
+display: flex;
+flex-direction: column;
+height: 82px;
+position: relative;
+&__label{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+
+    &__text{
+        font-size: 16px;
+    font-family: neo-medium-arabic;
+    font-weight: 700;
+    }
+    &__icon{
+        width: 18px;
+        height: 18px;
+    }
+}
+&__input{
+    position: relative;
+    border: 1px solid #BEBEBE;
+    height: 52px;
+    border-radius: 4px;
+    flex-grow: 0;
+    &__field{
+        width: 100%;
+        color: #44AD85;
+        height: 100%;
+        font-size: 16px;
+        border-radius: 4px;
+        appearance: none;
+        outline: none;
+        padding:10px ;
+        box-sizing: border-box;
+        border: none;
+        font-family: neo-regular-arabic;
+        font-weight: bold;
+  
+      
+    }
+    &__icon{
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+        position: absolute;
+        top: 20px;
+        left: 24px;
+        transform: rotate(-90deg);
+    }
+}
+
+
+}

@@ -1,0 +1,72 @@
+.calender{
+    &__sub-title{
+        font-family: neo-medium-arabic;
+        font-size: 16px;
+        padding: 15px 0;
+    }
+}
+.bb-1{
+    border-bottom:1px solid #e4d9d9;
+}
+.pv-15{
+    padding: 15px 0; 
+}
+.day-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .day{
+        height: 60px;
+        width: 55px;
+        margin: 3px;
+        padding: 8px 5px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F2F2F2;
+        color: #313436;
+        font-family: neo-regular-arabic;
+        font-weight: bold;
+        font-size: 14px;
+
+        &.active{
+            background-color: #159966;
+            color: white;
+        }
+
+    }
+}
+.time-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    .time{
+        width: 40%;
+        padding: 15px;
+        margin: 5px;
+        color: #313436;
+        background-color: #F2F2F2;
+        font-family: neo-regular-arabic;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 15px;
+
+
+        &.active{
+            background-color: #159966;
+            color: white;
+        }
+        
+    }
+}
+.pt-0{
+    padding-top: 0;
+}
+.mb-5{
+margin-bottom: 2px;
+}

@@ -1,0 +1,38 @@
+.btn{
+    color: #159966;
+    border: #159966 1px solid;
+    width: 205px;
+    &__dark{
+        color: white;
+        background-color: #159966;
+    }
+}
+.form-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+
+ 
+    &__title{
+        flex: 5;
+        padding-right: 30px;
+    }
+    &__image{
+        height: 70px;
+        word-wrap: 70px;
+        object-fit: contain;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+    }
+    &__control{
+        display: flex;
+        padding-left:20px ;
+        justify-content: flex-end;
+        flex: 5;
+
+    }
+
+}

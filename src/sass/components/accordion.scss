@@ -1,0 +1,41 @@
+@use '../../sass/utils/variables' as *;
+
+.accordion{
+    height: 58px;
+    width: 686px;
+    border: 1px solid $light-green;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+     &:not(:first-child){
+        margin-top: 20px;
+     }
+    &__title{
+        height: 18px;
+        font-family: neo-medium-arabic;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        &__icon{
+            display: inline-block;
+        }
+       
+    }
+    &__content{
+        border-top: 1px solid $light-green;
+        height: 56px;
+        width: 647px;
+        font-family: neo-regular-arabic;
+        line-height: 1.6;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    
+    &.active{
+        height: 139px;
+    }
+}

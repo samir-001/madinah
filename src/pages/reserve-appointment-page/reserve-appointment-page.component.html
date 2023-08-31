@@ -1,0 +1,63 @@
+<app-header [data]="data">
+    <app-presonal-info></app-presonal-info>
+</app-header>
+<div class="postion-100">
+    <div class="container">
+        <form  #userForm='ngForm' class="form">
+                <div class="layout">
+                    <div>
+                        <div class="form-section1">
+                            <app-input-group label="الصفة" [labelIcon]="true"></app-input-group>        
+                            <div class="mt-30">
+                                <app-input-group label="الزيارة مرتبطة بمعاملة مقدمة" [labelIcon]="true"></app-input-group>
+                            </div>
+                            <div class="mt-30">
+                                <app-input-group label="البلدية" [labelIcon]="true"></app-input-group>
+                            </div>
+                            <div class="row mt-30">
+                                <app-input-group label="التصنيف الرئيسي للخدمة" [labelIcon]="true"></app-input-group>
+                                <app-input-group label="التصنيف الفرعي للخدمة" [labelIcon]="true"></app-input-group>
+                            </div>
+                            <div class="mt-30">
+                                <app-input-group label="التصنيف الفرعي للخدمة" [labelIcon]="true"></app-input-group>
+                            </div>
+                            <div class="row mt-30">
+                                <app-input-group label="طريقة تقديم الخدمة" [labelIcon]="true"></app-input-group>
+                                <app-input-group label="الادارة المعنية بالطلب" [labelIcon]="true"></app-input-group>
+                            </div>
+                            <div class="row mt-30">
+                                <app-input-group label="التصنيف الرئيسي للمراجعة" [labelIcon]="true"></app-input-group>
+                                <app-input-group label="التصنيف الفرعي للمراجعة" [labelIcon]="true"></app-input-group>
+                            </div>
+                            <div class=" mt-30">
+                                <app-text-area label="ملاحظات"></app-text-area>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div >
+                            <app-disability-checkbox></app-disability-checkbox>
+                        </div>
+                    </div>
+                <div>
+
+                    <div class="form-section2">
+                        <app-input-group label="نوع المرفق" [labelIcon]="true"></app-input-group>   
+                        <app-file-input></app-file-input>
+                    </div>
+                    <div class="form-section4">
+                       <app-calender></app-calender>
+                    </div>
+                </div>
+                <div class="form-section3">
+                    <app-form-action></app-form-action>
+                </div>
+         
+            </div>
+            </form>
+    </div>
+</div>
+<div class="fix-potion-100">
+    <app-footer></app-footer>
+</div>

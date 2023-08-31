@@ -1,0 +1,19 @@
+.content-data{
+    .carousel{
+        padding: 34px 0;
+        display: flex;
+        overflow: scroll; 
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    &__control{
+        position: absolute;
+        top: 45px;
+        left: 45px;
+        .chevron-right{
+            padding: 0 5px;
+            transform: rotateY(180deg);
+        }
+    }
+}

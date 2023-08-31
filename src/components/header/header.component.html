@@ -1,0 +1,56 @@
+<div class="header">
+    <!-- <app-nav-bar></app-nav-bar> -->
+    <div class="container"> 
+        <div class="header__card">
+            <div class="header__card__content">
+                <h3 class="header__card__content__title">{{data.pageTitle}}</h3>
+                <p class="header__card__content__text">{{data.pageText}}</p>
+            </div>
+            <div class="header__card__controls">
+                <div class="header__card__controls__buttons">
+
+           
+                <button class="btn ml-20">
+                    <span>استعلام عن طلبات</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/download.svg" alt="">
+                    </span>
+                </button>
+                <button class="btn">
+                    <span>دليل المستخدم</span>
+                    <span class="btn__icon">
+                        <img src="../../assets/images/download.svg" alt="">
+                    </span>
+                </button>
+            </div>
+            <div class="header__card__controls__evaluation">
+                <span><img src="../../assets/images/stardark.svg" alt=""></span>
+                <span><img src="../../assets/images/stardark.svg" alt=""></span>
+                <span><img src="../../assets/images/starhalf.svg" alt=""></span>
+                <span><img src="../../assets/images/star.svg" alt=""></span>
+                <span><img src="../../assets/images/star.svg" alt=""></span>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <div class="content-title">
+            <div class="header-icon">
+                <img class="header-icon__content" [src]= "'../../assets/images/'+ data.childComponentIcon" alt="">
+            </div>
+            <div class="content-title__text header-text">
+                <h3 class="header-text__main">
+                    {{data.childComponentTitle}}    
+                </h3>
+                <p class="header-text__sub">
+                    {{data.childComponentText}}    
+                </p>
+            </div>
+        </div>
+        <ng-content></ng-content>
+    </div>
+</div>
+

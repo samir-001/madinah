@@ -1,0 +1,74 @@
+.sticker{
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    align-items: center;
+    border:1px solid #0000001A;
+    background-color: #DCF3E9;
+    border-radius: 4px;
+    margin-top:20px ;
+    &__image{
+        width:133px ;
+        height: 133px;
+        object-fit: contain;
+        flex:2
+    }
+    &__text{
+        width: 616px;
+        flex: 8;
+    }
+
+    &__control{
+        align-self: end;
+        flex: 2;
+        padding-bottom: 35px;
+    }
+}
+.btn{
+    color: #159966;
+    border-color: #159966;
+}
+.header-with-checkbox{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 27px;
+    
+
+    .check-box{
+        position: relative;
+        margin-left: 5px;
+        &__real{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            z-index: 99;
+            opacity: 0;
+            &:checked + .check-box__style img{
+                display: block;
+            }
+        }
+        &__style{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: #FFFFFF;
+            border:1px solid #159966;
+            border-radius: 4px;
+            z-index: 98;
+            img{
+                position: relative;
+                top: -9px;
+                left: 9px;
+                display: none;
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+
+        }
+    }
+}

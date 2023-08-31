@@ -1,0 +1,42 @@
+.service-card{
+    width: 450px;
+    height: 133px;
+    border-radius: 14px;
+    background-color: #DEF6FF;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    &:not(:last-child){
+        margin-left: 34px;
+
+    }
+    &__icon{
+        position: relative;
+        height: 110px;
+        overflow: hidden;
+        width: 82px;
+        &__cercle{
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateX(50%);
+            background-color: #32C5FF;
+        }
+        &__content{
+            position: absolute;
+            height: 78px;
+            width: 64px;
+            object-fit: contain;
+            left: 0;
+            transform: translateY(50%);
+            bottom: 50%;
+            z-index: 9999;
+        }
+    }
+
+    
+    
+}

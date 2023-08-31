@@ -1,0 +1,87 @@
+@use '../../sass/utils/variables' as *;
+.header{
+    padding: 100px 0;
+    height: 350px;
+    background: linear-gradient(270deg, #00724C 45%, #153536  );
+    box-sizing: border-box;
+    &__card{
+        padding-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        color: $light-color;
+        &__content{
+            padding-top: 10px;
+            font-family:neo-medium-arabic ;
+            &__title{
+                font-size: 28px;
+                
+            }
+            &__text{
+                padding-top: 20px;
+                font-family: neo-regular-arabic;
+            }
+        }
+        &__controls{
+            display: flex;
+            flex-direction: column;
+            
+            &__buttons{
+                display: flex;
+                flex-direction: row;
+            }
+            &__evaluation{
+                display: flex;
+                direction: ltr;
+
+                span{
+                    padding-left: 5px;
+                    padding-top: 10px;
+                    img{
+                        width: 22px;
+                        height: 22px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.content{
+    padding:15px 34px 0 34px;
+    border-radius: 4px;
+    border: 1px solid $light-green;
+    background-color: $light-color;
+    width: 100%;
+    position: relative;
+    top: -100px;
+    box-sizing: border-box;
+
+
+    &-title{
+        height: 85px;
+        border-bottom: 1px solid $light-green;
+        display: flex;
+        align-items: center;
+    }
+    &-data{
+        .carousel{
+            padding: 34px 0;
+            display: flex;
+            overflow: scroll; 
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        &__control{
+            position: absolute;
+            top: 45px;
+            left: 45px;
+            .chevron-right{
+                padding: 0 5px;
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+}

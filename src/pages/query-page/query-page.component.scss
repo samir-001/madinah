@@ -1,0 +1,27 @@
+.requestControl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        padding-bottom: 10px;
+    }
+}
+.header-text{
+    margin-right: 0;
+}
+.btn{
+    width: 160px;
+    border-radius: 10px;
+    &__icon{
+        width: 18px;
+        height: 18px;
+    }
+}
+.text{
+    font-size: 14px;
+    width: 90%;
+    font-weight: bolder;
+    font-family: neo-regular-arabic;
+    text-align: center;
+}
